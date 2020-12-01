@@ -11,7 +11,7 @@ public class Util : MonoBehaviour
     static Vector3 topRight;
     static Rect cameraRect;
 
-    static bool showDebug = true;  //turns on and off console logging
+    //static bool showDebug = true;  //turns on and off console logging
 
     // Use this for initialization
     void Start()

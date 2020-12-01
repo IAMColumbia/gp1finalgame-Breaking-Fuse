@@ -13,20 +13,12 @@ Genre: Endless-Runner, Action
 Platform: Windows
 
 
-Folder Sturcture
-
+Folder Structure:
 \src
-
 \src\packages
-
 \assets
-
 \docs
-
 \build
-
 \build\0.1POC
-
 \build\0.2VS
-
 \build\0.3Final

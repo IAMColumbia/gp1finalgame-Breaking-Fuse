@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scroller : MonoBehaviour
 {
 
-    public BoxCollider2D collider;
+    public BoxCollider2D col;
 
     public Rigidbody2D rb;
 
@@ -16,11 +16,11 @@ public class Scroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
+        col = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
 
-        height = collider.size.y;
-        collider.enabled = false;
+        height = col.size.y;
+        col.enabled = false;
 
         rb.velocity = new Vector2(0, scrollSpeed);
     }
