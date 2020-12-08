@@ -157,7 +157,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4509804, g: 0.45490196, b: 0.4509804, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -273,9 +273,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
         type: 3}
-      propertyPath: levelTile
+      propertyPath: levelTileRandomWFullGround
+      value: 
+      objectReference: {fileID: 6501565509866901962, guid: 50ac7b39d67217441b5d9bd659562e96,
+        type: 3}
+    - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
+        type: 3}
+      propertyPath: levelTileLeft
+      value: 
+      objectReference: {fileID: 361723366330276767, guid: 02eebe300dd33754a8769ffb5b8d58be,
+        type: 3}
+    - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
+        type: 3}
+      propertyPath: levelTileRight
+      value: 
+      objectReference: {fileID: 8066032280722792616, guid: fcebc3a408cf22b41b3d34509bcae1c7,
+        type: 3}
+    - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
+        type: 3}
+      propertyPath: levelTileStarter
+      value: 
+      objectReference: {fileID: 7455750385332016757, guid: 455a7f3b57bde334eaf1b1a31f957c66,
+        type: 3}
+    - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
+        type: 3}
+      propertyPath: levelTileBlank
       value: 
       objectReference: {fileID: 7760619996950820657, guid: aecb6f2aaf8ebd347a66cd90bd3018da,
+        type: 3}
+    - target: {fileID: 5063777322400292475, guid: 54da4b4b5ad0b9e43b17e036af52642f,
+        type: 3}
+      propertyPath: levelTileWFullGround
+      value: 
+      objectReference: {fileID: 6501565509866901962, guid: 50ac7b39d67217441b5d9bd659562e96,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54da4b4b5ad0b9e43b17e036af52642f, type: 3}

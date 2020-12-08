@@ -1,1 +1,5 @@
 Release Notes version 1 POC
+
+Proof of Concept displays a basic circle as the player and an endless-runner environment.
+A "level tile" is the size of the screen and is a building block for each tile that goes on.
+The player can use A and D to move left and right, and the walls will block them from moving.
