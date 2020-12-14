@@ -1,1 +1,15 @@
 Release Notes version 2 Vertical Slice
+
+It is very simple for the first few tiles. This is where Instructions will show on screen before enemies do.
+
+The first couple of "Level Tiles" in the runner are now basic and empty of any enemies and holes in the floor.
+There is an issue with some of the tiles not being instantiated exactly where they need to be, stopping the
+level tiles from connecting Seamlessly.
+
+The level geometry of each Level Tile alternates between two basic designs:
+ - Portion of ground to walk on (Two Holes with the ground forced to the left/right)
+ - Whole tile is filled with a floor
+
+Much of this was wasted to overhaul the Ground/Obstacle system.
+
+If the player walks into the black areas(obstacles), they will die (currently closes the application).

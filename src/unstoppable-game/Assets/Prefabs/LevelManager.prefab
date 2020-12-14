@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a56fde571907741bbe7bc641233ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTileNormal: {fileID: 7455750385332016757, guid: 455a7f3b57bde334eaf1b1a31f957c66,
+    type: 3}
+  levelTileRandom: {fileID: 3630039761896953630, guid: 2ca5f7bdecdf9714fb604aaaf5659d7c,
+    type: 3}

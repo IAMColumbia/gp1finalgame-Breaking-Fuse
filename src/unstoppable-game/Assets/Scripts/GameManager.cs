@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static bool introScrollCompleted = false;
+
+    private int score;
+
+    public int Score { get => score; set => score = value; }
+
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (Input.GetKey(KeyCode.Escape)) Application.Quit();
+        Score = Mathf.FloorToInt(Time.timeSinceLevelLoad);
+        Debug.Log(Score); // score
+        if (Input.GetKey(KeyCode.Escape)) {
+            Application.Quit();
+        }
     }
 }
