@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject levelTileStarter;
+    public LevelTile levelTileStarter;
+    public LevelTile levelTileLeft;
+    public LevelTile levelTileRight;
+    public LevelTile levelTileWFullGround;
 
-    public GameObject levelTileLeft;
-    public GameObject levelTileRight;
-    public GameObject levelTileWFullGround;
 
     private bool hasRandomized = false;
 

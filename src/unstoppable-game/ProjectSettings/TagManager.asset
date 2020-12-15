@@ -52,3 +52,6 @@ TagManager:
   - name: Player
     uniqueID: 1742494921
     locked: 0
+  - name: Enemy
+    uniqueID: 957064411
+    locked: 0

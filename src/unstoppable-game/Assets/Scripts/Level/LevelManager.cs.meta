@@ -3,7 +3,15 @@ guid: 17a56fde571907741bbe7bc641233ca8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - levelTileStarter: {fileID: 7455750385332016757, guid: 455a7f3b57bde334eaf1b1a31f957c66,
+      type: 3}
+  - levelTileLeft: {fileID: 361723366330276767, guid: 02eebe300dd33754a8769ffb5b8d58be,
+      type: 3}
+  - levelTileRight: {fileID: 8066032280722792616, guid: fcebc3a408cf22b41b3d34509bcae1c7,
+      type: 3}
+  - levelTileWFullGround: {fileID: 6501565509866901962, guid: 50ac7b39d67217441b5d9bd659562e96,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

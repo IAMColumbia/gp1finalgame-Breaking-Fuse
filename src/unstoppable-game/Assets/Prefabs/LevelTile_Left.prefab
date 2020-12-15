@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3293056728632667331}
   - component: {fileID: 1891245408275735190}
   - component: {fileID: 5818312042259788}
-  - component: {fileID: -9192589387084771093}
+  - component: {fileID: 4498128618212720777}
+  - component: {fileID: 8567209053332077747}
   m_Layer: 0
   m_Name: LevelTile_Left
   m_TagString: Untagged
@@ -83,7 +84,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-9192589387084771093
+--- !u!114 &4498128618212720777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,12 +93,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 361723366330276767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3aecc89348ba0c47b80a5642ee7d91a, type: 3}
+  m_Script: {fileID: 11500000, guid: ef330d4d60c25464ab3ea295631f65ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
   col: {fileID: 0}
   rb: {fileID: 0}
+--- !u!114 &8567209053332077747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361723366330276767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e96d2ca120c78c4d97b8d7ca8a5cdfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 760389530018878992, guid: 5cfe2ae296216bc41b387b3d03af3c0b, type: 3}
 --- !u!1 &930496147885597343
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +123,7 @@ GameObject:
   - component: {fileID: 7883587760947104738}
   - component: {fileID: 7836118395715201275}
   - component: {fileID: 9136697151443112966}
+  - component: {fileID: 2381724480563497221}
   m_Layer: 0
   m_Name: Hole_right
   m_TagString: Obstacle
@@ -206,6 +221,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &2381724480563497221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930496147885597343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6235fee5f55d74c46810de3b6c9b1dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2490940743584978966
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +325,7 @@ GameObject:
   - component: {fileID: 7928349054397626775}
   - component: {fileID: 3667794840495820637}
   - component: {fileID: 6316347679473358812}
+  - component: {fileID: 4134524646981812104}
   m_Layer: 0
   m_Name: Hole_left
   m_TagString: Obstacle
@@ -395,6 +423,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &4134524646981812104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737541950167341545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6235fee5f55d74c46810de3b6c9b1dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3803457337144858070
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +531,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5494063600855485008}
   - component: {fileID: 3488045319214978597}
-  - component: {fileID: 9109770650629036595}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Ground
@@ -563,18 +602,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9109770650629036595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5062047535311738779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86e1b4a3a70075048a4e7e762cac48f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5676860554110866074
 GameObject:
   m_ObjectHideFlags: 0
