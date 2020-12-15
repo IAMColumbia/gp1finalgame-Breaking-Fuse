@@ -1,1 +1,13 @@
 Release Notes version 3 Final
+
+In this version:
+ - Instructions displayed in the Intro for the Player
+ - The player can Guard using the left/right arrow keys
+ - The player can Move using the A and D keys
+ - Enemy Wall-Turrets spawn randomly on each tile
+ - Coins spawn randomly on full-ground tiles
+ - Collecting a coin gives the player +1 to their score
+ - Successfully guarding a projectile gives the player +1 to their score
+ - A working highscore system
+ - UI Elements such as Score and Survival Time
+ - Replayability

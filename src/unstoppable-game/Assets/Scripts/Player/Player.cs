@@ -7,8 +7,8 @@ public class Player : MonoBehaviour
 
     public Vector2 Direction;
     public float Speed;
+    public GameObject guardBarrier;
 
-    private Vector3 moveTranslation;
     private Rigidbody2D rb2D;
     SpriteRenderer spriteRenderer;
     PlayerController playerController;
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         {
             playerController = this.gameObject.AddComponent<PlayerController>();
         }
-        gameObject.transform.position = new Vector2(0, -1.25f);
+        gameObject.transform.position = new Vector2(0, -2f);
     }
 
     // Update is called once per frame
@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
         {
             this.Direction = Vector3.zero;
         }
+
+        UpdateGuardBarrier();
+        
     }
 
     void FixedUpdate()
@@ -41,12 +44,28 @@ public class Player : MonoBehaviour
         rb2D.MovePosition(rb2D.position + Direction * Speed * Time.fixedDeltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+
+    private void UpdateGuardBarrier()
     {
-        if (collision.CompareTag("Obstacle"))
+        if (!GameManager.playerHit)
         {
-            Debug.Log("Player touched Obstacle!");
-            Application.Quit();
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                guardBarrier.transform.rotation = Quaternion.Euler(0f, 0f, 60f);
+                guardBarrier.SetActive(true);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                guardBarrier.transform.rotation = Quaternion.Euler(0f, 0f, -60f);
+                guardBarrier.SetActive(true);
+            }
+            else
+            {
+                guardBarrier.SetActive(false);
+            }
         }
+        
     }
+
 }
